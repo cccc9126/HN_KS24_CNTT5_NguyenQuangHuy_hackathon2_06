@@ -19,9 +19,7 @@ function ListBills({ list, deleteBill }: ListBillsProps) {
 
   const startIndex = (currentPage - 1) * pageSize;
   const paginatedData = list.slice(startIndex, startIndex + pageSize);
-  function deleteHandle() {
-    
-  }
+ 
   const [open, setOpen] = useState(false);
     const [confirmLoading, setConfirmLoading] = useState(false);
     const [modalText, setModalText] = useState("");
@@ -54,8 +52,9 @@ function ListBills({ list, deleteBill }: ListBillsProps) {
       <table
         style={{
           border: "1px solid black",
-          borderCollapse: "collapse",
+         
           width: "100%",
+          borderRadius: "10px",
         }}
       >
         <thead>
